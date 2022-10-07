@@ -1,5 +1,6 @@
 <template>
     <div id="tierRow">
+        <span id="dragIndicator" class="material-icons">drag_indicator</span>
         <div @click="toggleEdit" id="tierName" :style="tierNameStyle">
             {{ tier.name }}
         </div>
@@ -60,7 +61,7 @@ const onValidate = () => {
 </script>
 
 <style lang="scss" scoped>
-@import "@/scss/variables.scss";
+@import "@/scss/index.scss";
 @import "@radial-color-picker/vue-color-picker/dist/vue-color-picker.min.css";
 #tierRow {
     width: 100%;
@@ -68,6 +69,14 @@ const onValidate = () => {
     display: flex;
     flex-direction: row;
     column-gap: 8px;
+    #dragIndicator {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        color: white;
+        cursor: pointer;
+    }
     #tierName {
         height: 100%;
         display: flex;
@@ -79,6 +88,8 @@ const onValidate = () => {
         padding: 0 8px;
         user-select: none;
         border-radius: 4px;
+        font-weight: 700;
+        cursor: pointer;
     }
     #tierEditionWrapper {
         top: 0;

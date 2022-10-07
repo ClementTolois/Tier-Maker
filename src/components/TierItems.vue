@@ -17,7 +17,7 @@ const props = defineProps<{
 </script>
 
 <style lang="scss" scoped>
-@import "@/scss/variables.scss";
+@import "@/scss/index.scss";
 #tierItems {
     width: 100%;
     height: 100%;

@@ -11,8 +11,10 @@
   "dependencies": {
     "@radial-color-picker/vue-color-picker": "^5.0.1",
     "hsl-to-hex": "^1.0.0",
+    "material-icons": "^1.12.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3",
+    "vuedraggable": "^4.1.0",
     "vuex": "^4.0.0"
   },
   "devDependencies": {
