@@ -76,6 +76,7 @@ const onValidate = () => {
         box-sizing: border-box;
         color: white;
         cursor: pointer;
+        user-select: none;
     }
     #tierName {
         height: 100%;
